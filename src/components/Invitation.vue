@@ -4,7 +4,7 @@
       <div class="invitation-cover">
         <div class="cover-content" :class="{'invitation-up':isOpening}">
           <div class="content-inside">
-            <img class="content-inside-photo" src="https://cdn.jsdelivr.net/gh/luckyu2/imgLibrary@main/ruiqiImg/_63A1508_1.webp">
+            <img class="content-inside-photo" src="https://cdn.jsdelivr.net/gh/luckyu2/imgLibrary@main/ruiqiImg/_63A1727_1.webp">
             <p>我们结婚啦！</p>
             <p><b>余司胜 & 罗瑞琪</b></p>
             <p>时间：2022年2月6日</p>
