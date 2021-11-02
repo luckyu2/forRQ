@@ -207,7 +207,6 @@ export default {
               display: flex;
               justify-content:space-around;
              a {
-               border: 1px solid red;
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
