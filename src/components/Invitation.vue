@@ -144,7 +144,7 @@ export default {
           }
           .content-inside{
             height: 94vh;
-            padding: 20px;
+            padding: 20px 5px;
             color: #a9895d;
             background-color: #FFF1DE;
             text-align: center;
