@@ -24,13 +24,24 @@
                 <button @click="closeInvitation">关闭</button>
               </div>
             </div>
+            <div class="content-inside-about">
+              <a @click="$router.push({ path: '/she' })">
+                <img src="../assets/images/nv.png" alt="女">
+                <p style="color: palevioletred"> 关于她</p>
+              </a>
+
+              <a @click="$router.push({ path: '/man' })">
+                <img src="../assets/images/nan.png" alt="nan">
+                <p> 关于他</p>
+              </a>
+            </div>
           </div>
         </div>
         <div class="cover-inside-left" :class="{'opening':isOpening}">
-          <img style="height: 30vh;margin:15vh 10vh " src="../images/yq.png" alt="邀请函">
+          <img style="height: 30vh;margin:15vh 10vh " src="../assets/images/yq.png" alt="邀请函">
         </div>
         <div class="cover-inside-right" :class="{'opening':isOpening}"></div>
-        <img class="cover-inside-seal" src="../images/seal.png" @click="openInvitation" :class="{'invitation-flight':isOpening}">
+        <img class="cover-inside-seal" src="../assets/images/seal.png" @click="openInvitation" :class="{'invitation-flight':isOpening}">
       </div>
     </div>
   </div>
@@ -83,7 +94,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 30px 20px;
+    padding: 0 20px;
     padding-top: 60px;
     z-index: 4;
     transform: scale(0.05);
@@ -132,15 +143,15 @@ export default {
             -webkit-transform: translateY(-60px);
           }
           .content-inside{
-            height: 100%;
+            height: 94vh;
             padding: 20px;
             color: #a9895d;
             background-color: #FFF1DE;
             text-align: center;
             overflow: auto;
-            .content-inside-photo{
-              /*height: 50vh;*/
-              width: 100%;
+            &-photo{
+              height: 50vh;
+              /*width: 100%;*/
               margin-bottom: 10px;
               padding: 5px;
               border: 1px solid #f7debb;
@@ -149,7 +160,7 @@ export default {
               margin-top: 0;
               margin-bottom: 5px;
             }
-            .content-inside-bless{
+            &-bless{
               input{
                 width: 100%;
                 height: 35px;
@@ -190,6 +201,18 @@ export default {
                   }
                 }
               }
+            }
+            &-about{
+              margin-top: 40px;
+              display: flex;
+              justify-content:space-around;
+             a {
+               border: 1px solid red;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+              }
+
             }
           }
         }
