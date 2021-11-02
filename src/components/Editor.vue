@@ -6,7 +6,7 @@
         <a href="javascript:;" class="maximum"></a>
     </header>
     <!-- 日期 -->
-    <p class="code">Last login: <span>{{ startDate }}</span> on luckyu</p>
+    <p class="code" style="margin-top: 30px">Last login: <span>{{ startDate }}</span> on luckyu</p>
     <!--代码编辑区-->
     <pre>
       <code v-html="highlightedCode"></code>
