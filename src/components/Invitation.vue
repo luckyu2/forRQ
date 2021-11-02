@@ -26,22 +26,22 @@
             </div>
             <div class="content-inside-about">
               <a @click="$router.push({ path: '/she' })">
-                <img src="../assets/images/nv.png" alt="女">
+                <img src="../images/nv.png" alt="女">
                 <p style="color: palevioletred"> 关于她</p>
               </a>
 
               <a @click="$router.push({ path: '/man' })">
-                <img src="../assets/images/nan.png" alt="nan">
+                <img src="../images/nan.png" alt="nan">
                 <p> 关于他</p>
               </a>
             </div>
           </div>
         </div>
         <div class="cover-inside-left" :class="{'opening':isOpening}">
-          <img style="height: 30vh;margin:15vh 10vh " src="../assets/images/yq.png" alt="邀请函">
+          <img style="height: 30vh;margin:15vh 10vh " src="../images/yq.png" alt="邀请函">
         </div>
         <div class="cover-inside-right" :class="{'opening':isOpening}"></div>
-        <img class="cover-inside-seal" src="../assets/images/seal.png" @click="openInvitation" :class="{'invitation-flight':isOpening}">
+        <img class="cover-inside-seal" src="../images/seal.png" @click="openInvitation" :class="{'invitation-flight':isOpening}">
       </div>
     </div>
   </div>
